@@ -31,7 +31,7 @@ function addContact(contact, contactType, odd) {
     nameEle.textContent = contact.name
     contactAddressEle.textContent = contact[contactType]
     statusEle.className = `status ${contact.status}`
-    contactDetailsEle.innerHTML = getAddressAsHTML(contact.address)
+    contactDetailsEle.innerHTML = `<p>${contact.phone}</p>${getAddressAsHTML(contact.address)}`
     // Set ids based on contact key
     contactWrapper.id = `contact-${contact.id}`
     nameStatusWrapper.id = `contact-name-status-${contact.id}`

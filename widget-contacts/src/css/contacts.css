@@ -116,8 +116,19 @@ a {
     left: -5%;
 }
 
+.address-details {
+    padding-bottom: 16px;
+}
+
+.address-details > p:first-child {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 .address-details > p {
     margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .contact-wrapper.active .contact-address-wrapper .address-details {
