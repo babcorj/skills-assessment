@@ -1,19 +1,21 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="./css/contacts.css">
 		<script type="text/javascript" src="./js/data.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.js?features=es6%2Cdefault%2CArray.of%2CArray.prototype.find%2CArray.prototype.filter%2CHTMLDocument%2CJSON%2Cdocument%2Cdocument.getElementsByClassName%2CElement%2CElement.prototype.remove"></script>
-    <head>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6%2Cdefault%2CArray.prototype.find%2CArray.prototype.filter%2CHTMLDocument%2CJSON%2Cdocument%2Cdocument.getElementsByClassName%2CElement%2CElement.prototype.remove%2CArray.prototype.map%2CArray.prototype.%40%40iterator"></script>
+	</head>
 	<body>
 		<div class="contacts-wrapper">
-		  <div class="header" onclick="toggleContactDetails()">Contacts</div>
-		  <div class="contacts" id="contacts"></div>
-		  <div class="footer" onclick="toggleContactDetails()">
-			<div class="contact-type">
-			  <select id="contact-type-selector" onchange="updateContactTypes(data)">
-					<option id="email">Email address</option>
-					<option id="phone">Phone number</option>
-			  </select>
+			<div class="header" onclick="toggleContactDetails()">Contacts</div>
+			<div class="contacts" id="contacts"></div>
+			<div class="footer" onclick="toggleContactDetails()">
+				<div class="contact-type">
+				<select id="contact-type-selector" onchange="updateContactTypes(data)">
+						<option id="email">Email address</option>
+						<option id="phone">Phone number</option>
+				</select>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="./js/contacts.js"></script>
